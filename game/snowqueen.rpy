@@ -175,7 +175,7 @@ label troll_time:
 
     f "(Forced smile) Thank you, Chieftain. I understand. But Alma is still a child.  Wouldn't it be best for her to recover in the castle, surrounded by loved ones?"
 
-    show troll smille at trollsmileleft with dissolve
+    show troll smile at trollsmileleft with dissolve
 
     ct "(Chuckles, a sound like rocks grinding together) Love can be a curious illness, advisor. Here, with the mountain's magic, she will heal truly."
 
@@ -251,7 +251,7 @@ label troll_time:
             "This magical shield protects them from any potential attacks as they race towards the cave entrance."
 
             "Alma receives a mild brainwashing spell"
-            jump throne_roomday
+            jump throneRoomday
 
         "Let Alma stay with the trolls":
             show freya worry at freyaworryleft with dissolve
@@ -296,7 +296,7 @@ label troll_time:
             jump backto_palace
 
 label backto_palace:
-    scene bg_throne_room
+    scene bg ThroneRoom
     play music "throneroom.mp3"
 
     show freya_unease
@@ -380,7 +380,7 @@ label coronation_day:
     return
 
 label throneRoomday:
-    scene bgThroneRoom
+    scene bg ThroneRoom
     play music "throneroom.mp3"
 
     "Sunlight streams through the tall windows, illuminating dust motes dancing in the air. Relief washes over Ella's face as the grand oak doors creak open."
