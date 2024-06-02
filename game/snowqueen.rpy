@@ -1,28 +1,5 @@
-<<<<<<< HEAD
-﻿label snowqueenBook:   
-    scene bg_sleeping
-=======
-﻿# Left side of screen
-transform freyaneutral:
-    zoom 3
-    xalign 0.0
-    yalign 1.0
-
-# Right side of screen
-transform ariannasmile:
-    zoom 3
-    xalign 1.0
-    yalign 1.0
-
-# Center of screen
-transform freyaneutralcenter:
-    zoom 3
-    xalign 0.5
-    yalign 1.0
-
 label snowqueenBook:   
     scene bg SleepQuarters
->>>>>>> a1eeb774187fb76508d08a3838fcb4174fab34ed
     play music "sleepingqtheme.mp3"
 
     n "Using book transmigration magic, she was able to possess Freya, a trusted character of the King and Queen of Arendelle."
@@ -65,17 +42,10 @@ label search_drawer:
     jump leave_room
 
 label talk_to_maids:
-<<<<<<< HEAD
-    scene bg_hallway
-    show arianna smile at ariannasmile with dissolve
-=======
     scene bg Hallway
-    show arianna smile at ariannasmile
-    with easeinright
->>>>>>> a1eeb774187fb76508d08a3838fcb4174fab34ed
+    show arianna smile at ariannasmile with dissolve
     ar "Good morning, Lady Freya. Didn't expect you to be awake so early."
     show freya neutral at freyaneutral with dissolve
-    with easeinleft
     f "Good morning... Arianna, is it? Please, forgive me, but I seem to be experiencing a slight headache and my memory feels a touch hazy. Perhaps you could refresh my recollection."
 
     menu:
@@ -326,55 +296,68 @@ label troll_time:
             jump backto_palace
 
 label backto_palace:
-    scene bg ThroneRoomWithIce
+    scene bg_throne_room
     play music "throneroom.mp3"
 
-    "Sunlight streams through the tall arched windows of the throne room. The moon had long left the sky and the dawn had already set in when Freya arrived back to the throne room of Arrendelle."
+    show freya_unease
+    "Sunlight streams through the tall arched windows of the throne room. The moon had long left the sky and the dawn had already set in when Freya arrived back to the throne room of Arendelle."
 
+    show ella_worry
     "Across from her stands Ella, with her expression heavy with worry."
 
     e "Ella (Voice trembling) Freya… where is Alma?"
 
+    show freya_sigh
     "Freya takes a deep breath, steeling herself for the difficult conversation."
     
     f "(Softly) Ella…  I took Alma to the trolls."
 
+    show ella_confused
     "Ella's frown deepens, confusion clouding her features."
 
     e "The trolls? Why?"
 
+    show freya_worry
     f "(Hesitates) Her injuries… the magic… the trolls possess a unique healing power."
 
+    show ella_angry
     e "(Standing abruptly) But they said it would only take a few days! It's been weeks, Freya! Weeks!"
 
-    "Decision Point:  Freya must choose a difficult truth."
+    "Decision Point: Freya must choose a difficult truth."
 
     menu:
         "Tell the Truth":
+            show freya serious at freyaserious with dissolve
             "Freya clenches her fists, bracing herself for the emotional fallout."
 
             f "The truth is, Ella... The trolls say the magic… it's… it's taking longer than expected. They… they can't guarantee when Alma will be back."
 
+            show ella teary at ellatearyright with dissolve
             "Ella's face pales, her eyes widening in horror."
 
             e "(Voice breaking) No… no, this can't be happening. It's my fault… I hurt her!"
 
             "Ella stumbles back, tears welling in her eyes. She collapses onto a nearby chair, burying her face in her hands, wracked with sobs."
 
+            show freya concern at freyaconcern with dissolve
             "Freya rushes to her side, her heart heavy with guilt and sorrow."
             jump coronation_day
 
         "Tell a Lie":
-            "Freya knows the truth could destroy Ella.  A desperate plan forms in her mind."
+            show freya serious at freyaserious with dissolve
+            "Freya knows the truth could destroy Ella. A desperate plan forms in her mind."
 
             "(WARNING: This path is emotionally manipulative)"
 
             f "There's… there's something else I need to tell you. She hesitates, then blurts out, Alma… she… she didn't make it."
 
-            "Ella gasps, a look of pure horror contorting her face.  Freya steels herself for the inevitable breakdown, but instead, a chilling calm descends upon Ella."
+            show ella panic at ellapanicright with dissolve
+            "Ella gasps, a look of pure horror contorting her face. Freya steels herself for the inevitable breakdown, but instead, a chilling calm descends upon Ella."
 
+            show ella deadsmile at elladeadsmileright with dissolve
             e "(Voice Icy) Alma… is gone?"
 
+            show freya teary at freyateary with dissolve
             f "(Nods, tears welling in her own eyes) Yes…"
 
             e "(Stands slowly, her voice devoid of emotion) Then I have much work to do. Arendelle needs a strong Queen. For Alma."
@@ -388,87 +371,107 @@ label coronation_day:
     scene bg ThroneRoomIced
 
     "Years passed and coronation came, but her sister never did. No consolation nor accomplishment could ease the guilt of Ella’s heart for killing her parents and leading her sister to death."
+
     "This, alongside her imminent powers had turned her into a literal ice queen, freezing half the kingdom exactly after being crowned."
+
     "With her sister gone, she sees no reason to live nor let others live. Arendelle became a kingdom of ice and death."
+
     "Ella thanks everone, and especially Freya for being there. On the surface, it seems like she has the power on the kingdom, but the truth is you have the queen under your fingers. You became the shadow queen of Arendelle."
     return
 
-label throne_roomday:
-    scene bg ThroneRoom
+label throneRoomday:
+    scene bgThroneRoom
     play music "throneroom.mp3"
 
     "Sunlight streams through the tall windows, illuminating dust motes dancing in the air. Relief washes over Ella's face as the grand oak doors creak open."
 
+    show freya strainedsmile at freyastrainedsmile with dissolve
+    show alma wince at almawinceright with dissolve
     "Freya enters, supporting a frail Alma. Alma leans heavily on Freya, her face pale and drawn."
 
-    e "(Rushing forward) Alma!  Thank goodness you're alright!"
+    show ella relief at ellareliefcenter with dissolve
+    e "(Rushing forward) Alma! Thank goodness you're alright!"
 
-    "Ella engulfs her sister in a tight embrace, tears welling in her eyes.  Alma sways slightly, her voice weak but oddly cheerful."
+    "Ella engulfs her sister in a tight embrace, tears welling in her eyes. Alma sways slightly, her voice weak but oddly cheerful."
 
     a "(Winces) Easy there, Ella! Still a little sore from all that mountain climbing, wouldn't you say, Freya?"
 
-    "Freya offers a strained smile, her eyes lingering on Alma with concern."
-
+    show freya neutral at freyaneutral with dissolve
     f "Indeed. The trolls put her through quite the… rigorous recovery process."
 
     "Alma pulls back from the hug, her gaze flitting around the room with an unsettling intensity."
 
-    a "(Giggles) Rigorous? More like invigorating!  The mountain air, the… challenges… they made me stronger, Ella! We have to be strong, you know!"
+    show alma smile at almasmileright with dissolve
+    a "(Giggles) Rigorous? More like invigorating! The mountain air, the… challenges… they made me stronger, Ella! We have to be strong, you know!"
 
-    "Ella frowns slightly.  Alma's usual vibrancy seems muted, replaced by a forced cheerfulness."
+    show ella confused at ellaconfusedcenter with dissolve
+    "Ella frowns slightly. Alma's usual vibrancy seems muted, replaced by a forced cheerfulness."
 
-    e "(Gently) Stronger?  That's wonderful, Alma. But you look exhausted.  Come, let's get you to your chambers."
+    e "(Gently) Stronger? That's wonderful, Alma. But you look exhausted. Come, let's get you to your chambers."
 
+    show alma pout at almapoutright with dissolve
     a "(Waves a dismissive hand) Nonsense! Just a bit winded from that exciting escape, wouldn't you agree, Freya?"
 
-    "Freya forces another smile, her unease growing."
-
+    show freya worry at freyaworryleft with dissolve
     f "(Carefully) Perhaps a small rest before anything else, Alma?"
 
     a "(Pouts playfully) Rest? But there's so much to do! We need to be prepared for anything, Ella!"
 
     "Alma's voice takes on a new edge, a hint of something unfamiliar lurking beneath the surface. Ella steps closer, her brow furrowed."
 
+    show ella worry at ellaworrycenter with dissolve
     e "Prepared for what, Alma? Tell me."
 
+    show alma defiant at almadefiantright with dissolve
     a "(Eyes gleaming) For anything, Ella! The mountain taught me that! We can't be weak! We have to be strong!"
 
     "Alma clenches her fists, a strange intensity radiating from her frail form."
 
-    "Freya shivers involuntarily.  This is not the carefree Alma they remember."
+    show freya unease at freyaunease with dissolve
+    "Freya shivers involuntarily. This is not the carefree Alma they remember."
 
     f "(Clears throat) The mountain… it can be a harsh teacher, Alma. Perhaps some rest will allow you to process everything…"
 
-    a "(Scoffs) Process?  Nonsense!  I'm clear-eyed now, more than ever! We must show our strength, Ella!  Arendelle needs a strong queen!"
+    show alma scoff at almascoffright with dissolve
+    a "(Scoffs) Process? Nonsense! I'm clear-eyed now, more than ever! We must show our strength, Ella! Arendelle needs a strong queen!"
 
     "Alma's gaze flickers to the throne behind Ella, a flicker of ambition momentarily replacing the forced cheer."
 
+    show ella worry at ellaworrycenter with dissolve
     "Ella's eyes narrow, a flicker of suspicion replacing the initial relief."
 
     e "(Voice firm) Alma, you're not well. You need rest. We'll discuss everything later. Freya, please help Alma get settled."
 
-    a "(Beams) Of course, Ella!  But don't worry, I won't be out for long! Stronger than ever, ready to face any challenge!"
+    show alma bigsmile at almabigsmileright with dissolve
+    a "(Beams) Of course, Ella! But don't worry, I won't be out for long! Stronger than ever, ready to face any challenge!"
 
-    "Alma throws Ella a dazzling smile, a touch too wide and practiced.  Before Ella can respond, Freya ushers her out of the throne room.  Ella watches them go, a knot of worry tightening in her stomach."
+    "Alma throws Ella a dazzling smile, a touch too wide and practiced. Before Ella can respond, Freya ushers her out of the throne room. Ella watches them go, a knot of worry tightening in her stomach."
 
     "The joyous reunion has been tainted by a disturbing undercurrent."
 
-    "Sunlight streams through stained glass windows, casting colorful patterns on the polished stone floor.  Freya carefully helps Alma walk through the castle hallway, her brow furrowed with concern."
+    "Sunlight streams through stained glass windows, casting colorful patterns on the polished stone floor. Freya carefully helps Alma walk through the castle hallway, her brow furrowed with concern."
 
+    show alma confused at almaconfusedright with dissolve
     a "(Huffs slightly) This castle is like a giant ice sculpture! Everything's so… cold."
 
+    show freya smallsmile at freyasmallsmile with dissolve
     f "(Chuckles softly) Perhaps. But it is home, Alma. You just need some time to adjust after… everything."
 
-    "Freya casts a worried glance at Alma.  Although physically weak, a strange energy crackles beneath the surface."
+    "Freya casts a worried glance at Alma. Although physically weak, a strange energy crackles beneath the surface."
 
+    show alma defiant at almadefiantright with dissolve
     a "(Stops abruptly, turning to Freya) Adjust? Why should I adjust? I'm stronger now, Freya. The mountain showed me that!"
 
+    show freya concern
     f "(Places a gentle hand on Alma's arm) Stronger, yes. But you also look exhausted. Rest is important, Alma."
 
+    show alma wince
     a "(Pushes Freya's hand away, a flicker of anger in her eyes) Rest? No time for that! Ella… she needs to understand. We can't be weak anymore, Freya!"
 
+    show freya worry
     f "(Concerned) Ella understands that you were injured, Alma. She just wants you to recover."
 
+    show alma scoff
     a "(Scoffs) Recover? I am recovered! Stronger than ever! But Ella… she's still clinging to her silly weakness! Arendelle needs a strong queen, Freya!"
 
     "Alma's voice takes on a new edge, a hint of ambition replacing her usual playful demeanor. Freya's concern deepens."
@@ -477,38 +480,65 @@ label throne_roomday:
         "Dissuade Alma":
             "Freya worries about the growing tension between the sisters. She decides to gently remind Alma of Ella's struggles."
 
+            show freya unease at freyaunease with dissolve
             f "(Sighs) Alma, listen to me. Ella has carried a heavy weight for a long time. She may not always show it, but she cares deeply about you. Perhaps a gentler approach…"
 
+            show alma defiant at almadefiantright with dissolve
             a "(Crosses her arms, her voice laced with defiance) Gentle? The mountain showed me the dangers of weakness! Ella needs to be strong! Arendelle needs a strong queen!"
 
             "Alma's eyes gleam with a disturbing intensity that makes Freya shudder."
 
+            show freya concern at freyaconcern with dissolve
             f "(Places a hand on Alma's shoulder) Strength comes in many forms, Alma. Ella's strength lies in her love for you, for Arendelle. She's been through her own struggles, her own battles."
 
+            show alma scoff at almascoffright with dissolve
             a "(Scoffs) Battles? Playing princess in her ice palace? No, Freya. The mountain showed me real strength, real power! We can't afford Ella's… weakness… any longer."
 
             "Freya's concern deepens. Alma's words sound harsh, manipulative. There's something wrong here."
 
+            show freya serious at freyaserious with dissolve
             f "(Voice firm) Alma, the mountain's magic can be… unpredictable. Perhaps it's clouded your judgment. Trust me, Ella is strong, in her own way."
 
+            show alma defiant at almadefiantright with dissolve
             a "(Pulls away from Freya, a flicker of anger flashing in her eyes) Don't patronize me, Freya! I see things clearly now! Ella needs to learn from the mountain's power, just like I did!"
 
             "Alma throws Freya a challenging look, then continues walking down the hallway, her steps surprisingly steady despite her earlier weakness. Freya watches her go, a knot of worry tightening in her stomach."
             
             "The 'recovery' at the mountain has left Alma changed, and not for the better. Freya knows she needs to get to the bottom of this, for Alma, for Ella, for Arendelle."
+
             jump coronation_dayy
+
         "Be an understanding adult":
+
             "Freya understands Alma's frustration after her ordeal. She decides to show empathy and offer support."
+
+            show freya unease at freyaunease with dissolve
             f "(Takes a deep breath) I understand your frustration, Alma. You've been through a lot. It's natural to feel… different after such an experience."
+
+            show alma pout at almapoutright with dissolve
             a "(Pouts slightly, her earlier anger replaced by a forced cheer) Different? I wouldn't say different, Freya. More… aware. The mountain opened my eyes."
+
+            show freya smallsmile at freyasmallsmile with dissolve
             f "(Offers a gentle smile) I'm sure it did, Alma. And it's wonderful that you feel stronger. But trust me, Ella wants nothing more than for you to be healthy and happy. Perhaps, when you're feeling better, you two can talk about it."
+
+            # Put Sigh Asset
             a "(Sighs dramatically) Talk, talk, talk. Ella's always so serious, wouldn't you agree, Freya? She needs someone who understands true strength, someone who can face any challenge!"
+
             "Alma throws Freya a pointed look, a hint of manipulation lurking beneath the surface. Freya hesitates, a flicker of unease crossing her features."
+
+            show freya unease at freyaunease with dissolve
             f "(Carefully) Ella is strong, Alma. In her own way."
+
+            show alma defiant at almadefiantright with dissolve
             a "(Waves a dismissive hand) Oh, I'm sure she is, in her own… way. But wouldn't it be better if she were strong… like us, Freya? Strong like the mountain made me?"
+
             "Alma leans in close to Freya, her voice dropping to a conspiratorial whisper."
+
+            show alma smile at almasmileright with dissolve
             a "We can help her, Freya. You and I. We can show her the true meaning of strength. Wouldn't that be wonderful?"
+
             "A cold dread pooling in your stomach. The innocent, carefree girl she once knew seems to have vanished, replaced by someone… else. Someone who sees Freya as a potential ally, a means to an unsettling end."
+
             jump coronation_dayy
 
 label coronation_dayy:
@@ -601,16 +631,25 @@ label fight_flee:
 
     menu:
             "Fight":
+
                 f "No. I won’t run, when I know I can do something. Watch me young Queen, as magic is not always bad."
+
                 "Freya used her magic to conjure a blast of lightning against the guards incapacitating them. Everyone gasps."
+
                 e "A witch! The adviser is a witch!"
+
                 jump argue_blame
             
             "Flee":
+
                 f "Hurry your majesty! Before they catch you!"
+
                 a "Kill them"
+
                 "Ella receives a throwing knife to her wrists. She cannot conjure ice anymore."
+
                 e "Run, Freya. Just run."
+
                 "Ella sacrifices herself for you"
 
 label argue_blame:

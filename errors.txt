@@ -2,9 +2,37 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1: expected ':' not found.
-    transform tarina confident:
-                     ^
+File "game/snowqueen.rpy", line 1: expected statement.
+    <<<<<<< HEAD
+                ^
+
+File "game/snowqueen.rpy", line 2: expected statement.
+    ﻿label snowqueenBook:   
+                        ^
+
+File "game/snowqueen.rpy", line 4: expected statement.
+    =======
+          ^
+
+File "game/snowqueen.rpy", line 5: expected statement.
+    ﻿
+     ^
+
+File "game/snowqueen.rpy", line 25: expected statement.
+    >>>>>>> a1eeb774187fb76508d08a3838fcb4174fab34ed
+                                                    ^
+
+File "game/snowqueen.rpy", line 68: expected statement.
+    <<<<<<< HEAD
+                ^
+
+File "game/snowqueen.rpy", line 71: expected statement.
+    =======
+          ^
+
+File "game/snowqueen.rpy", line 75: expected statement.
+    >>>>>>> a1eeb774187fb76508d08a3838fcb4174fab34ed
+                                                    ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Sat Jun  1 10:42:52 2024
+Mon Jun  3 02:09:34 2024
