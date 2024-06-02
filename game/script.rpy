@@ -1,14 +1,4 @@
-﻿transform center:
-    zoom 3
-    xalign 0.5
-    yalign 1.0
-
-transform left:
-    zoom 3
-    xalign 0.0
-    yalign 1.0
-
-# The game starts here.
+﻿# The game starts here.
 
 label start:
 
@@ -33,11 +23,11 @@ label start:
     
     "Whether it be the simplest of researches for a light spell to the complexities of space and time magic."
 
-    show tarina confident at center with dissolve
+    show tarina confident at tarinacenter with dissolve
 
     "This is where our protagonist, Tarina, who is set to finally start her adventures as a licensed witch."
 
-    show tarina confident at left with easeinright
+    show tarina confident at tarinaleft with easeinright
 
     "And there is only but one thing that is keeping her from graduating."
 
