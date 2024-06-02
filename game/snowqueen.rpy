@@ -16,16 +16,6 @@ transform freyaneutralcenter:
     xalign 0.5
     yalign 1.0
 
-# Background
-transform bg_throne:
-    zoom 1.2
-    
-transform bg_thronewithice:
-    zoom 1.25
-
-transform bg_forest:
-    zoom 0.3
-
 label snowqueenBook:   
     scene bg SleepQuarters
     play music "sleepingqtheme.mp3"
@@ -436,6 +426,7 @@ label coronation_time:
                 a "You hear that everyone? Queen Ella is still trying to hide it!"
                 pp "Kill the witch! Kill the witch!"
                 "Freya sided with Alma and left the losing team. It was a practical choice."
+                return
 
 label fight_flee:
     scene bg ThroneRoom
@@ -487,10 +478,12 @@ label argue:
     a "Shut up, both of you are witches! They must have conspired to kill the king and queen! Do not listen to their words!"
     "The guards and people stampeded towards Ella and Freya. Of course, not wanting to hurt the people, both merely defended their own body than to retaliate."
     "Freya and Ella have been executed. Alma lived as the new queen with her new panel of entourage, several boulders appeared to visit my humble abode."
+    return
 
 label blame_ending:
     scene bg ThroneRoom
     "Like a grand sacrifice you took the blame to help Erin or a racing game"
+    return
 
 
 
