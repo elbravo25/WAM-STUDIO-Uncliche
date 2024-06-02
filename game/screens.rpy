@@ -594,6 +594,12 @@ screen about():
                 text _("MAURICIO, Juan Daniel")
                 text _("PADILLO, Lyanna")
                 text _("PUYAT, Danielle")
+                text _("Marketing Lead")
+                text _("PADILLO, Lyanna")
+                text _("ALFAFARA, James")
+                text _("BRAVO, Elijah")
+                text _("PUYAT, Danielle")
+                text _("VALDEZ, Cheyenne")
 
 
 style about_label is gui_label
