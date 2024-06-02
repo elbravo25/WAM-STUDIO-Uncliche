@@ -6,7 +6,7 @@ define t = Character("Tarina", color="#a5682a")
 # Friend A before she gets introduced.
 define u1 = Character("???")
 # Friend with a name now... couldn't think of a name.
-define f = Character("Friend A")
+define fa = Character("Fey")
 # Use this for Oz before he gets introduced
 define ou = Character("???")
 # Change into this when Oz gets introduced.

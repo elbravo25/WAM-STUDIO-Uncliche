@@ -27,7 +27,7 @@ transform bg_forest:
     zoom 0.3
 
 label snowqueenBook:   
-    scene bg_sleeping
+    scene bg SleepQuarters
     play music "sleepingqtheme.mp3"
 
     n "Using book transmigration magic, she was able to possess Freya, a trusted character of the King and Queen of Arendelle."
@@ -70,7 +70,7 @@ label search_drawer:
     jump leave_room
 
 label talk_to_maids:
-    scene bg_hallway
+    scene bg Hallway
     show arianna smile at ariannasmile
     with easeinright
     ar "Good morning, Lady Freya. Didn't expect you to be awake so early."
@@ -117,7 +117,7 @@ label leave_room:
 
 label throne_room:
     play music "throneroom.mp3"
-    scene bg_throne at bg_throne with dissolve
+    scene bg ThroneRoom
 
     "Navigating through the large palace is no easy feat. Unlike the Lancaterossa, where magical signage are readily available, the palace of Arendelle is literally a maze. Hundreds of windows, doors, and rooms."
 
@@ -143,7 +143,7 @@ label throne_room:
             jump time_skip
 
 label time_skip:
-    scene bg_thronewithice at bg_thronewithice with dissolve
+    scene bg EllaRoomIced
     play music "throneroom.mp3"
 
     "Alma tries to cheer up the young, gloomy Ella by playing with her."
@@ -160,7 +160,7 @@ label time_skip:
             jump troll_time
 
 label troll_time:
-    scene bg_forest at bg_forest with dissolve
+    scene bg Forest
 
     play music "enchantedforest.mp3"
 
@@ -231,7 +231,7 @@ label troll_time:
             jump backto_palace
 
 label backto_palace:
-    scene bg_throne at bg_throne with dissolve
+    scene bg ThroneRoomWithIce
     play music "throneroom.mp3"
 
     "Sunlight streams through the tall arched windows of the throne room. The moon had long left the sky and the dawn had already set in when Freya arrived back to the throne room of Arrendelle."
@@ -276,15 +276,16 @@ label backto_palace:
             jump coronation_day
 
 label coronation_day:
-    scene bg_throne at bg_throne with dissolve
+    scene bg ThroneRoomIced
 
     "Years passed and coronation came, but her sister never did. No consolation nor accomplishment could ease the guilt of Ella’s heart for killing her parents and leading her sister to death."
     "This, alongside her imminent powers had turned her into a literal ice queen, freezing half the kingdom exactly after being crowned."
     "With her sister gone, she sees no reason to live nor let others live. Arendelle became a kingdom of ice and death."
     "Ella thanks everone, and especially Freya for being there. On the surface, it seems like she has the power on the kingdom, but the truth is you have the queen under your fingers. You became the shadow queen of Arendelle."
+    return
 
 label throne_roomday:
-    scene bg_throne at bg_throne with dissolve
+    scene bg ThroneRoom
     play music "throneroom.mp3"
 
     "Sunlight streams through the tall windows, illuminating dust motes dancing in the air. Relief washes over Ella's face as the grand oak doors creak open."
@@ -355,7 +356,7 @@ label throne_roomday:
             jump coronation_dayy
 
 label coronation_dayy:
-    scene ella room 
+    scene bg EllaRoom 
     # Change later maybe?
     play music "sleepingqtheme.mp3"
 
@@ -386,7 +387,7 @@ label coronation_dayy:
             jump coronation_time
 
 label coronation_time:
-    scene  throne_room
+    scene  bg ThroneRoom
     play music "throneroom.mp3"
 
     "Sunlight streams through stained glass windows, casting colorful patterns on the polished stone floor.  Choir voices soar, filling the air with a joyous melody.  Guests from all over Arendelle, adorned in their finest attire, fill the pews."
@@ -437,7 +438,7 @@ label coronation_time:
                 "Freya sided with Alma and left the losing team. It was a practical choice."
 
 label fight_flee:
-    scene throne_room
+    scene bg ThroneRoom
     # Add suspense filled bgm
 
     "You were given the choice to Fight or Flee, what will you choose?"
@@ -457,7 +458,7 @@ label fight_flee:
                 "Ella sacrifices herself for you"
 
 label argue_blame:
-    scene throne_room
+    scene bg ThroneRoom
 
     "You have 2 options, to argue or to take the blame. Which one will you choose?"
     menu:
@@ -479,7 +480,7 @@ label argue_blame:
                 jump blame_ending
             
 label argue:
-    scene throne_room
+    scene bg ThroneRoom
 
     f "Magic is not an evil thing, it is just like air that has always been with us."
     e "(Looked at Freya with teary eyes)"
@@ -488,7 +489,7 @@ label argue:
     "Freya and Ella have been executed. Alma lived as the new queen with her new panel of entourage, several boulders appeared to visit my humble abode."
 
 label blame_ending:
-    scene throne_room
+    scene bg ThroneRoom
     "Like a grand sacrifice you took the blame to help Erin or a racing game"
 
 
