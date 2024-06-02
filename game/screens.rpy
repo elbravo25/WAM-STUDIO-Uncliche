@@ -555,15 +555,51 @@ screen about():
         style_prefix "about"
 
         vbox:   
-            
-                label "[config.name!t]"
-                text _("Version [config.version!t]\n")
 
                 ## gui.about is usually set in options.rpy.
                 if gui.about:
                     text "[gui.about!t]\n"
 
-                text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+                text _("Lead Producer")
+                text _("VALDEZ, Cheyenne")
+                text _("Co-Producer")
+                text _("FIDELINO, Akira")
+                text _("Lead Programmer")
+                text _("BRAVO, Elijah")
+                text _("Programmers")
+                text _("ALTEA, Kimberly")
+                text _("DURANO, John Bernard")
+                text _("FRANCIA, Zach")
+                text _("MAURICIO, Juan Daniel")
+                text _("Lead Game Designer")
+                text _("GENA, Reiner")
+                text _("Game Designers")
+                text _("ALTEA, Kimberly")
+                text _("DURANO, John Bernard")
+                text _("FIDELINO, Akira")
+                text _("FRANCIA, Zach")
+                text _("PUYAT, Danielle")
+                text _("Lead QA Tester")
+                text _("ALTEA, Kimberly")
+                text _("QA Testers")
+                text _("DURANO, John Bernard")
+                text _("FIDELINO, Akira")
+                text _("FRANCIA, Zach")
+                text _("PUYAT, Danielle")
+                text _("Creatives Lead")
+                text _("ALFAFARA, James")
+                text _("Creatives")
+                text _("BRAVO, Elijah")
+                text _("GENA, Reiner")
+                text _("MAURICIO, Juan Daniel")
+                text _("PADILLO, Lyanna")
+                text _("PUYAT, Danielle")
+                text _("Marketing Lead")
+                text _("PADILLO, Lyanna")
+                text _("ALFAFARA, James")
+                text _("BRAVO, Elijah")
+                text _("PUYAT, Danielle")
+                text _("VALDEZ, Cheyenne")
 
 
 style about_label is gui_label
