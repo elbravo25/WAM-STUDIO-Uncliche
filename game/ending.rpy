@@ -1,5 +1,5 @@
 label end1:
-    scene bg end1
+    scene bg Black
 
     "Due to you being unable to find someone to work for your internship."
     "Your graduation got delayed"
