@@ -116,3 +116,6 @@ image bg fairyCave:
     size (1980, 1080)
 
 # ===== Peter Pan Backgrounds END ===== #
+
+image bg Black:
+    "scenes/peterpan/bg black.png"
