@@ -803,7 +803,7 @@ label blame_ending:
     scene bg_throneroom
     play music "throneroom.mp3"
 
-    "Like a grand sacrifice you took the blame to help Erin or a racing game"
+    "Like a grand sacrifice you took the blame to help Ella"
 
     return
 
