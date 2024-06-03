@@ -59,6 +59,26 @@ transform tarinadetermined:
     xalign 0.0
     yalign 1.0
 
+transform tarinasad:
+    zoom 3
+    xalign 0.0
+    yalign 1.0
+
+transform tarinaexcited:
+    zoom 3
+    xalign 0.0
+    yalign 1.0
+
+transform tarinaconfused:
+    zoom 3
+    xalign 0.0
+    yalign 1.0
+
+transform tarinaembarassed:
+    zoom 3
+    xalign 0.0
+    yalign 1.0
+
 # Right side of screen
 transform ozproud:
     zoom 3
@@ -337,7 +357,7 @@ label prlgue:
 
     o "Fufuuu, while I do quite enjoy your enthusiasm about the job young lady, I really should explain what you are going into young lady."
 
-    show tarina embarrassed with dissolve
+    show tarina embarassed at tarinaembarassed with dissolve
 
     t "Yes! Sorry... Hehe."
 
@@ -355,7 +375,7 @@ label prlgue:
 
     o "As my assistant you will be required to not only help me arrange the books inside my library and study about the complexities and magic of the stories in these books."
 
-    show tarina confused with dissolve
+    show tarina confused at tarinaconfused with dissolve
     
     t "Magic? Complexities?"
 
@@ -379,14 +399,14 @@ label prlgue:
         "Will you become Dr. Oz's assistant?"
 
         "Deny the invitation":
-            show tarina sad with dissolve
+            show tarina sad at tarinasad with dissolve
             t "Sorry Dr. Oz but I don't think I can do it."
             show oz disappointed at ozdisappointed with dissolve
             o "It's fine, good luck with your endeavours"
             jump end1
 
         "Accept the invitation":
-            show tarina excited with dissolve
+            show tarina excited at tarinaexcited with dissolve
             t "It sounds interesting, I accept!"
             show oz mischief at ozmischief with dissolve
             o "Let's get started then."

@@ -69,6 +69,21 @@ transform freyastrainedsmile:
     xalign 0.0
     yalign 1.0
 
+transform ellanervousleft:
+    zoom 3
+    xalign 0.0
+    yalign 1.0
+
+transform ellapanicleft:
+    zoom 3
+    xalign 0.0
+    yalign 1.0
+
+transform freyamadsmile:
+    zoom 3
+    xalign 0.0
+    yalign 1.0
+
 # Right side of screen
 transform ariannasmile:
     zoom 3
@@ -115,7 +130,7 @@ transform trollneutralright:
     xalign 1.0
     yalign 1.0
 
-transform ellatearyrightright:
+transform ellatearyright:
     zoom 3
     xalign 1.0
     yalign 1.0
@@ -165,6 +180,31 @@ transform almaconfusedright:
     xalign 1.0
     yalign 1.0
 
+transform ellaconfusedright:
+    zoom 3
+    xalign 1.0
+    yalign 1.0
+
+transform ellaangryright:
+    zoom 3
+    xalign 1.0
+    yalign 1.0
+
+transform ellaworryright:
+    zoom 3
+    xalign 1.0
+    yalign 1.0
+
+transform almaangryright:
+    zoom 3
+    xalign 1.0
+    yalign 1.0
+
+transform ellanervousright:
+    zoom 3
+    xalign 1.0
+    yalign 1.0
+
 # Center of screen
 transform freyaneutralcenter:
     zoom 3
@@ -187,6 +227,16 @@ transform ellaconfusedcenter:
     yalign 1.0
 
 transform ellaworrycenter:
+    zoom 3
+    xalign 0.5
+    yalign 1.0
+
+transform ellapaniccenter:
+    zoom 3
+    xalign 0.5
+    yalign 1.0
+
+transform ellatearycenter:
     zoom 3
     xalign 0.5
     yalign 1.0

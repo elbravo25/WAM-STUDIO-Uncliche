@@ -299,28 +299,28 @@ label backto_palace:
     scene bg ThroneRoom
     play music "throneroom.mp3"
 
-    show freya_unease
+    show freya unease at freyaunease with dissolve
     "Sunlight streams through the tall arched windows of the throne room. The moon had long left the sky and the dawn had already set in when Freya arrived back to the throne room of Arendelle."
 
-    show ella_worry
+    show ella worry at ellaworryright with dissolve
     "Across from her stands Ella, with her expression heavy with worry."
 
     e "Ella (Voice trembling) Freya… where is Alma?"
 
-    show freya_sigh
+    show freya unease at freyaunease with dissolve
     "Freya takes a deep breath, steeling herself for the difficult conversation."
     
     f "(Softly) Ella…  I took Alma to the trolls."
 
-    show ella_confused
+    show ella confused at ellaconfusedright with dissolve
     "Ella's frown deepens, confusion clouding her features."
 
     e "The trolls? Why?"
 
-    show freya_worry
+    show freya worry at freyaworryleft with dissolve
     f "(Hesitates) Her injuries… the magic… the trolls possess a unique healing power."
 
-    show ella_angry
+    show ella angry at ellaangryright with dissolve
     e "(Standing abruptly) But they said it would only take a few days! It's been weeks, Freya! Weeks!"
 
     "Decision Point: Freya must choose a difficult truth."
@@ -542,165 +542,271 @@ label throneRoomday:
             jump coronation_dayy
 
 label coronation_dayy:
-    scene bg EllaRoom 
-    # Change later maybe?
+    scene bg EllaRoom
     play music "sleepingqtheme.mp3"
 
     "Weeks have flown by in a flurry of preparations. The once-The Snow Queen kingdom hums with renewed life. It is Ella's coronation day! The windows are open, and so are those doors that never did before."
+    
     "Eight thousand salad plates, halls filled with festivities and ballroom excited for the balls. Finally, the guards have opened up the gates. The sun was looking bright but far beyond the horizons a cold icy storm brews."
 
     "Sunlight streams through a newly opened window, casting a warm glow on Ella's chambers. The room is bustling with activity. Maids scurry about, arranging flowers and straightening tapestries."
+
+    show freya worry at freyaworryleft with dissolve
     "Freya carefully adjusts the crown on Ella's head, a worried expression etched on her face"
+
+    show freya smallsmile at freyasmallsmile with dissolve
     f "(Holds the jeweled crown) There. Perfect. You look absolutely regal, Ella."
+
+    show ella worry at ellaworryright with dissolve
     "Ella stares at her reflection in the mirror, her face a mask of unease."
+
+    show ella nervous at ellanervousright with dissolve
     e "(Voice trembling) Regal, maybe. But do I look like a queen?"
+
+    show freya smile at freyasmile with dissolve
     f "(Places a hand on Ella's shoulder) Of course you do! A magnificent one. You were born for this, Ella."
+
+    show ella confused at ellaconfusedright with dissolve
     e "(Turns away, a shiver running down her spine despite the warm sunlight) I don't know, Freya. It all feels… so cold. The crown, the responsibility… even the weather."
+
     "A gust of wind whistles through the newly opened window, sending chills through the room. Ella closes the window with a sigh."
+
+    show freya strainedsmile at freyastrainedsmile with dissolve
     f "(Chuckles nervously) Just pre-coronation jitters, Ella. Everyone has them. Even the most seasoned rulers."
+
+    show ella worry at ellaworryright with dissolve
     e "(Glances out the window) Maybe. But where is Alma? I haven't seen her all morning amidst the chaos."
+
+    show freya unease at freyaunease with dissolve
     "A shadow of concern flickers across Freya's face. She forces a smile."
 
     menu:
         "Assure Ella 'Alma is probably just having fun out there' (Downplays the issue): (Choose this option if you want Freya to try and calm Ella's anxieties)":
+
+            show freya smile at freyasmile with dissolve
             f "Alma is probably just having fun out there, Freya assures her. She can't wait to celebrate you becoming Queen."
+
             jump coronation_time
+
         "Look for Alma":
-            f "I should look for her,"
+
+            show freya worry at freyaworryleft with dissolve
+            f "I should look for her"
+
             "Freya suggests, a flicker of worry in her eyes."
+
             f "She wouldn't miss this for anything."
+
             "Oddly enough, Freya was not able to find Alma anywhere in the castle, as well as some of the guards. Where could have they gone to when an event as important as a coronation is happening"
+
             jump coronation_time
 
 label coronation_time:
-    scene  bg ThroneRoom
+    scene bg ThroneRoom
     play music "throneroom.mp3"
 
     "Sunlight streams through stained glass windows, casting colorful patterns on the polished stone floor. Choir voices soar, filling the air with a joyous melody. Guests from all over Arendelle, adorned in their finest attire, fill the pews."
+
     "Anticipation crackles in the air. This is the day Arendelle welcomes their new queen: Ella."
+
+    show ella nervous at ellanervousleft with dissolve
     "Ella stands at the altar, a magnificent crown adorning her head. Her once pale face is flushed with a mixture of nervousness and determination. Freya stands vigilantly by her side, a worried look etched on her face."
+
     "Weeks have passed since Alma's strange behavior, and Freya has yet to find an explanation. A nagging suspicion continues to gnaw at her."
+
     p "(Raises his hands, his voice booming through the chapel): By the power vested in me, I declare you, Ella of Arendelle, Queen of this sovereign nation! May your reign be long and prosperous!"
+
     "A thunderous applause erupts from the crowd. Ella takes a deep breath, trying to quell the flutter of fear in her heart. She lifts her chin, a look of resolve hardening her features. This is it. This is her new beginning."
+
+    show alma angry at almaangryright with dissolve
     "Suddenly, the massive oak doors of the chapel burst open. A hush falls over the crowd. All eyes turn towards the entrance, where Alma stands, flanked by several armed guards. Her usual bright smile is replaced by a cold, determined expression."
+
     a "(Voice ringing out, silencing the choir) Hold your applause! There will be no coronation today!"
+
+    show ella panic at ellapanicleft with dissolve
     "Ella's heart plummets. Freya's hand tightens around Ella's arm, her eyes widening in alarm. This is not the joyous reunion they had hoped for."
+
     a "The people of Arendelle deserves a true leader, not a… a monster!"
+
     "Murmurs of confusion ripple through the crowd. Ella stares at Alma, her mind reeling. What is she doing?"
+
     a " Ella… my own sister… is a witch! The accusation hangs heavy in the air, a bomb dropped in the middle of the coronation ceremony. Gasps of shock erupt from the crowd. Ella stares at Alma, betrayal and hurt flashing in her eyes."
+
     a "She has used her dark magic to control us all! But no more! Seize her!"
+
     "The guards surge forward, their weapons glinting in the sunlight. Chaos erupts in the chapel. Ella stands The Snow Queen, The Snow Queen by a mixture of shock and disbelief. This isn't happening. This can't be happening."
 
     menu:
             "Calm Ella Down":
+
+                show freya concern at freyaconcern with dissolve
                 f "(Grasping Ella's arm firmly but gently) Your Majesty, you need to come with me. This isn't safe! We can talk about this later, but right now, we need to get you out of here."
+
+                show ella panic at ellapaniccenter with dissolve
                 e "(Having a panic attack)"
+
+                show alma defiant at almadefiantright with dissolve
                 a "I guess this is the side that you are taking, Freya. To aid with the witch."
+
+                show freya serious at freyaserious with dissolve
                 f "You are insane."
+
                 a "You are more insane for protecting that murderer. She murdered our parents. Guards, seize them!"
+
                 "As the guards approach, several vassals blocked their paths."
+
                 v "Milady, you must run, we will hold them off."
-                
+
+                jump fight_flee
+
             "Argue with Alma":
+
+                show freya serious at freyaserious with dissolve
                 f "(Stepping forward, voice laced with disbelief) Alma! What are you doing? This isn't you! Explain yourself right now!"
+
+                show ella worry at ellaworrycenter with dissolve
                 e "Stop..."
+
+                show alma defiant at almadefiantright with dissolve
                 a "I am doing what needs to be done. That person is not my sister."
+
                 f "How could you say that!"
+
                 e "Please, stop..."
+
+                show alma angry at almaangryright with dissolve
                 a "She is the reason why I almost died. It is thanks to the mountains why I am alive and kicking, but if not I would have been a The Snow Queen corpse like that witch wants."
+
+                show ella panic at ellapaniccenter with dissolve
                 e "(screams) ENOUGH!"
+
                 "Ella froze half of Arendelle due to her rampant emotions."
+
                 jump argue
 
             "Accuse Ella":
+
+                show freya serious at freyaserious with dissolve
                 f "All this time, you were a witch!"
+
+                show ella confused at ellaconfusedcenter with dissolve
                 e "(Confused) What are you saying, Freya? You have always known about my powers."
+
                 f "Liar!"
+
+                show alma bigsmile at almabigsmileright with dissolve
                 a "Hahaha! What an interesting turn of events!"
+
+                show ella panic at ellapaniccenter with dissolve
                 e "Stop! Please stop. This is all just a dream. This is all just a dream. Calm down. Conceal. Don’t feel it."
+
+                show alma angry at almaangryright with dissolve
                 a "You hear that everyone? Queen Ella is still trying to hide it!"
+
                 pp "Kill the witch! Kill the witch!"
+
                 "Freya sided with Alma and left the losing team. It was a practical choice."
+
                 return
 
 label fight_flee:
-    scene bg ThroneRoom
+    scene bg_throneroom
+    play music "throneroom.mp3"
     # Add suspense filled bgm
 
     "You were given the choice to Fight or Flee, what will you choose?"
 
     menu:
-            "Fight":
+        "Fight":
+            show freya serious at freyaserious with dissolve
+            f "No. I won’t run, when I know I can do something. Watch me young Queen, as magic is not always bad."
 
-                f "No. I won’t run, when I know I can do something. Watch me young Queen, as magic is not always bad."
+            "Freya used her magic to conjure a blast of lightning against the guards incapacitating them. Everyone gasps."
 
-                "Freya used her magic to conjure a blast of lightning against the guards incapacitating them. Everyone gasps."
+            show ella angry at ellaangryright with dissolve
+            e "A witch! The adviser is a witch!"
 
-                e "A witch! The adviser is a witch!"
-
-                jump argue_blame
+            jump argue_blame
             
-            "Flee":
+        "Flee":
+            show freya concern at freyaconcern with dissolve
+            f "Hurry your majesty! Before they catch you!"
 
-                f "Hurry your majesty! Before they catch you!"
+            show alma angry at almaangryright with dissolve
+            a "Kill them"
 
-                a "Kill them"
+            "Ella receives a throwing knife to her wrists. She cannot conjure ice anymore."
 
-                "Ella receives a throwing knife to her wrists. She cannot conjure ice anymore."
+            show ella teary at ellatearycenter with dissolve
+            e "Run, Freya. Just run."
 
-                e "Run, Freya. Just run."
-
-                "Ella sacrifices herself for you"
+            "Ella sacrifices herself for you"
+            jump argue_blame
 
 label argue_blame:
-    scene bg ThroneRoom
-
+    scene bg_throneroom
+    play music "throneroom.mp3"
+    
     "You have 2 options, to argue or to take the blame. Which one will you choose?"
     menu:
         "Argue":
-                "You chose to argue with Alma."
-                jump argue
+            "You chose to argue with Alma."
+            jump argue
 
         "Take the blame":
-                f "HAHAHA! You are all correct. I am the witch of Arendelle. I killed the king and queen of this country."
+            show freya madsmile at freyamadsmile with dissolve
+            f "HAHAHA! You are all correct. I am the witch of Arendelle. I killed the king and queen of this country."
 
-                f "I cursed the appointed Queen Ella to be able to conjure Ice in this cold and dark lands. It took you long enough you fools!"
+            show freya strainedsmile at freyastrainedsmile with dissolve                
+            f "I cursed the appointed Queen Ella to be able to conjure Ice in this cold and dark lands. It took you long enough you fools!"
 
-                a "(looks baffled) Ha, you can’t be serious!"
+            show alma confused at almaconfusedright with dissolve
+            a "(looks baffled) Ha, you can’t be serious!"
 
-                pp "KIll the witch! Kill the witch!"
+            pp "KIll the witch! Kill the witch!"
 
-                f "“That reaction, I sense brainwashing magic”"
+            show freya serious at freyaserious with dissolve
+            f "That reaction, I sense brainwashing magic."
 
-                f "I command thee, spirit of mana, to sever the anomaly manifesting upon this woman."
+            f "I command thee, spirit of mana, to sever the anomaly manifesting upon this woman."
 
-                "Freya used a high level dispel magic to cure Alma which promptly sent her to sleep. Conversely, Freya is struggling to stay awake."
+            "Freya used a high level dispel magic to cure Alma which promptly sent her to sleep. Conversely, Freya is struggling to stay awake."
 
-                g "The witch has taken down the princess. Kill the witch!"
+            g "The witch has taken down the princess. Kill the witch!"
 
-                e "No! Stop! She is not evil!"
+            show ella worry at ellaworrycenter with dissolve
+            e "No! Stop! She is not evil!"
 
-                pp "Evil! Evil!"
-                jump blame_ending
+            pp "Evil! Evil!"
+            jump blame_ending
             
 label argue:
-    scene bg ThroneRoom
+    scene bg_throneroom
+    play music "throneroom.mp3"
 
+    show freya serious at freyaserious with dissolve
     f "Magic is not an evil thing, it is just like air that has always been with us."
 
+    show ella teary at ellatearycenter with dissolve
     e "(Looked at Freya with teary eyes)"
 
+    show alma defiant at almadefiantright with dissolve
     a "Shut up, both of you are witches! They must have conspired to kill the king and queen! Do not listen to their words!"
 
     "The guards and people stampeded towards Ella and Freya. Of course, not wanting to hurt the people, both merely defended their own body than to retaliate."
 
     "Freya and Ella have been executed. Alma lived as the new queen with her new panel of entourage, several boulders appeared to visit my humble abode."
+    
     return
 
 label blame_ending:
-    scene bg ThroneRoom
+    scene bg_throneroom
+    play music "throneroom.mp3"
+
     "Like a grand sacrifice you took the blame to help Erin or a racing game"
+
     return
+
 
 
 
