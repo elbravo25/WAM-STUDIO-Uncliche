@@ -31,7 +31,6 @@ label start:
 
     "And there is only but one thing that is keeping her from graduating."
 
-    show docwithsig
 
     "That single thing is a signature from one of the licensed wizards and witches."
 
