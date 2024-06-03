@@ -200,7 +200,7 @@ label prlgue:
 
     "Time passes by"
 
-    ta "I say all of that to FriendA and here I am still jobless."
+    ta "I say all of that to Fey and here I am still jobless."
 
     scene bg SecludedPartoftheCity
 
