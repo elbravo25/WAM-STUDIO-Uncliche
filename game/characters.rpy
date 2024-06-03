@@ -2,19 +2,19 @@
 # Use different colors for each character thanks.
 
 # for Tarina
-define t = Character("Tarina", color="#a5682a")
+define ta = Character("Tarina", color="#a5682a")
 # Friend A before she gets introduced.
-define u1 = Character("???")
+define u1 = Character("???", color="#0e5594")
 # Friend with a name now... couldn't think of a name.
-define fa = Character("Fey")
+define fa = Character("Fey", color="#0e5594")
 # Use this for Oz before he gets introduced
-define ou = Character("???")
+define ou = Character("???", color="#c8ffc8")
 # Change into this when Oz gets introduced.
-define o = Character("Dr. Oz")
+define o = Character("Dr. Oz", color="#c8ffc8")
 # Narrator of the Books
 define n = Character("Narrator")
 # Freya (Name of the body that Tarina uses in The Snow Queen)
-define f = Character('Freya', color= "#a5682a")
+define f = Character('Freya(Tarina)', color= "#a5682a")
 # First maid that Freya/Tarina meets
 define ar = Character('Arianna', color= "#fbff04")
 # The Snow Queen
@@ -35,7 +35,7 @@ define e = Character("Extra")
 define g = Character("Guards")
 
 # Peter Pan
-define m = Character("Michael Darling", color="#c8ffc8")
+define m = Character("Michael Darling(Tarina)", color="#a5682a")
 define j = Character("John Darling", color="#c8c8ff")
 define w = Character("Wendy Darling", color="#ffc8c8")
 define g = Character("George Darling", color="#ffdc8b")

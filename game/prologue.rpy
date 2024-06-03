@@ -154,7 +154,7 @@ label prlgue:
 
     u1 "Are you okay?"
 
-    t "I'm... fine... just... thinking is all."
+    ta "I'm... fine... just... thinking is all."
     
     show frienda concerned with dissolve
 
@@ -164,65 +164,65 @@ label prlgue:
 
     show tarina grateful at tarinagrateful with dissolve
 
-    t "I appreciate it, FriendA, really... I do."
+    ta "I appreciate it, Fey, really... I do."
 
-    t "I know that we've always had each other's backs since our first year in the Academy."
+    ta "I know that we've always had each other's backs since our first year in the Academy."
 
-    t "But there are times where we need to do things on our own."
+    ta "But there are times where we need to do things on our own."
 
-    t "This is one of them."
+    ta "This is one of them."
 
     show tarina confident at tarinaconfident with dissolve
 
-    t "Besides, I can't let my bestie owe someone else because of me."
+    ta "Besides, I can't let my bestie owe someone else because of me."
 
     show tarina bigsmile at tarinabigsmile with dissolve
 
-    t "Watch, I'll get the best job in there is."
+    ta "Watch, I'll get the best job in there is."
 
-    t "Else, I won't be called Tarina the Stubborn at the Academy for nothing"
+    ta "Else, I won't be called Tarina the Stubborn at the Academy for nothing"
 
     show frienda sigh with dissolve
 
-    f "You do realise that it's an insult right?"
+    fa "You do realise that it's an insult right?"
 
     show frienda smile with dissolve
 
-    f "Anyways this is me. Good luck with your job hunt."
+    fa "Anyways this is me. Good luck with your job hunt."
 
-    f "And remember..."
+    fa "And remember..."
 
     show tarina annoyed at tarinaannoyed with dissolve
 
-    t "If I need help I should call you... Sure Mom!"
+    ta "If I need help I should call you... Sure Mom!"
 
     scene bg CityOverview
 
     "Time passes by"
 
-    t "I say all of that to FriendA and here I am still jobless."
+    ta "I say all of that to Fey and here I am still jobless."
 
     scene bg SecludedPartoftheCity
 
     show tarina sigh at tarinasigh with dissolve
     
-    t "Am I really that hopeless?"
+    ta "Am I really that hopeless?"
     # She hits a pole here.
     "Bonk"
 
     show tarina hurt at tarinahurt with dissolve
     
-    t "Owwww... I should've been paying attention to where I was walking."
+    ta "Owwww... I should've been paying attention to where I was walking."
 
-    t "Another lucky day for our heroine Tarina I guess..."
+    ta "Another lucky day for our heroine Tarina I guess..."
 
     "As she finally snaps out of her thoughts Tarina notices something weird."
 
     show tarina surprised at tarinasurprised with dissolve
 
-    t "Why is it all quiet all of a sudden?"
+    ta "Why is it all quiet all of a sudden?"
 
-    t "It's not even 3pm, yet I don't hear any sounds that are usually there in this city."
+    ta "It's not even 3pm, yet I don't hear any sounds that are usually there in this city."
 
     scene bg Alleyway
 
@@ -248,7 +248,7 @@ label prlgue:
 
     show tarina neutral at tarinaneutral with dissolve
 
-    t "{i}Well this looks creepy... What's this creepy old building doing in a city known for innovation?{/i}"
+    ta "{i}Well this looks creepy... What's this creepy old building doing in a city known for innovation?{/i}"
 
     show oz silhouette at ozsilhouette with dissolve
 
@@ -256,7 +256,7 @@ label prlgue:
 
     show tarina surprised at tarinasurprised with dissolve
 
-    t "{b}{size=+10}Gyaaaaaaaaah!!!{b}{/size}"
+    ta "{b}{size=+10}Gyaaaaaaaaah!!!{b}{/size}"
 
     # Center
     show oz mischief at ozmischiefcenter with dissolve
@@ -273,23 +273,23 @@ label prlgue:
 
     show tarina neutral at tarinaneutral with dissolve
 
-    t "{i}That scared me... who's this old man? He said that he owned this building... What even is it?{/i}"
+    ta "{i}That scared me... who's this old man? He said that he owned this building... What even is it?{/i}"
 
     ou "Oh my, do forgive me for my manners young lady. But you can call me Dr. Oz, a humble old wizard that owns this library."
 
-    t "{i}Oz? Where have I heard of that name before? Wait a minute... Is he reading my mind?!?{/i}"
+    ta "{i}Oz? Where have I heard of that name before? Wait a minute... Is he reading my mind?!?{/i}"
 
     o "Hohohoo! I wonder about that young lady. I shall let you think what you will."
 
     show tarina scream at tarinascream with dissolve
 
-    t "{b}{size=+10}So he is reading my mind!!!{/b}{/size}"
+    ta "{b}{size=+10}So he is reading my mind!!!{/b}{/size}"
 
     o "Fufuu... Well would you come inside? We can talk more about you needing that internship."
 
     show tarina guarded with dissolve
 
-    t "Wait... How did you know that I needed one? I have never"
+    ta "Wait... How did you know that I needed one? I have never"
 
     o "Never mentioned anything and haven't even thought of it the moment you came close to my library?"
 
@@ -305,13 +305,13 @@ label prlgue:
 
     show tarina thinking at tarinathinkingleft with dissolve
 
-    t "{i}He is making a good point. This can be an easy job for me to do so I can finally graduate.{/i}"
+    ta "{i}He is making a good point. This can be an easy job for me to do so I can finally graduate.{/i}"
 
-    t "{i}Urghhhh... It's annoying how this is literally something that I can't really ignore.{/i}"
+    ta "{i}Urghhhh... It's annoying how this is literally something that I can't really ignore.{/i}"
 
     o "So, your response?"
 
-    t "Alright alright! I'll at least hear you out."
+    ta "Alright alright! I'll at least hear you out."
 
     o "Splendid! Now follow me inside the library."
 
@@ -322,11 +322,11 @@ label prlgue:
     # Tarina at left
     show tarina amazed at tarinaamazed with dissolve
 
-    t "{i}This place is way too different on how it looks like outside{/i}"
+    ta "{i}This place is way too different on how it looks like outside{/i}"
 
     o "Welcome to my Grand Library. Breathtaking isn't it?"
 
-    t "This is amazing how many books are even in this library?"
+    ta "This is amazing how many books are even in this library?"
 
     # Oz at right
     show oz proud at ozproud with dissolve
@@ -335,15 +335,15 @@ label prlgue:
 
     o "The magic I used alone to expand this library to fit all of them took me copius amounts of time."
 
-    t "Wait you're Dr. Oz of the Tea Party!!!"
+    ta "Wait you're Dr. Oz of the Tea Party!!!"
 
     show oz amused at ozamused with dissolve
 
     o "Well yes I do believe that is indeed one of the groups that I was part with."
 
-    t "What are you even doing here? You're one of the greatest space and time wizards of all time!"
+    ta "What are you even doing here? You're one of the greatest space and time wizards of all time!"
 
-    t "You even created the space expansion magic used in magical bags and rooms used today!"
+    ta "You even created the space expansion magic used in magical bags and rooms used today!"
 
     o "I do believe I did study that on a whim because I wanted a library like this."
 
@@ -351,7 +351,7 @@ label prlgue:
 
     show tarina determined at tarinadetermined with dissolve
 
-    t "I accept!!!"
+    ta "I accept!!!"
 
     show oz mischief at ozmischief with dissolve
 
@@ -359,7 +359,7 @@ label prlgue:
 
     show tarina embarassed at tarinaembarassed with dissolve
 
-    t "Yes! Sorry... Hehe."
+    ta "Yes! Sorry... Hehe."
 
     show oz smile at ozsmile with dissolve
     # Add a loud one clap like you're asking for attention.
@@ -369,7 +369,7 @@ label prlgue:
 
     o "Do you hate cliches?"
 
-    t "I... don't? While technically it gets boring the more it happens. But I'm fine with them."
+    ta "I... don't? While technically it gets boring the more it happens. But I'm fine with them."
 
     o "Well I hate them, it makes it predictable. Oh how I wish there is more variety in stories. That is where you as my assistant come in."
 
@@ -377,7 +377,7 @@ label prlgue:
 
     show tarina confused at tarinaconfused with dissolve
     
-    t "Magic? Complexities?"
+    ta "Magic? Complexities?"
 
     o "Ah! Did I forget to mention that everything in this library has it's own unique magic?"
 
@@ -407,7 +407,7 @@ label prlgue:
 
         "Accept the invitation":
             show tarina excited at tarinaexcited with dissolve
-            t "It sounds interesting, I accept!"
+            ta "It sounds interesting, I accept!"
             show oz mischief at ozmischief with dissolve
             o "Let's get started then."
 
@@ -421,7 +421,7 @@ label prlgue:
         "The Snow Queen":
             n "Browsing through an array of books, a certain title piqued Tarina’s eyes -- The Snow Queen. A story of bond between two sisters."
             show tarina neutral at tarinaneutralcenter with dissolve
-            t "This seems like a good choice. A straightforward story should be easy to make more unique, right?"
+            ta "This seems like a good choice. A straightforward story should be easy to make more unique, right?"
             jump snowqueenBook
 
         "Peter Pan":
